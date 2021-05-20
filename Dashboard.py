@@ -41,7 +41,7 @@ from sklearn.preprocessing import LabelEncoder
 from scipy.stats import spearmanr
 
 #read data
-df=pd.read_csv('C:/Users/SarahAbouIbrahim/Desktop/marketing_data.csv')
+df=pd.read_csv('marketing_data.csv')
 print(df.shape)
 
 #cleaning data
