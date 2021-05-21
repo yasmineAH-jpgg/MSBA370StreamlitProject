@@ -18,7 +18,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import GradientBoostingRegressor
 from types import FunctionType
 
-marketing_df=pd.read_csv('marketing_data.csv')
+marketing_df=pd.read_csv('data/marketing_data.csv')
 marketing_df=Dashboard.clean_data(marketing_df)
 st.sidebar.title("Menu")
 options= st.sidebar.radio("Navigate",["Interactive Analysis","Data Analysis","Statistical Analysis","Predicting Purchases"])
@@ -31,7 +31,7 @@ def load_image(img):
     image = np.array(im)
     return image
 
-img = load_image('audience-analytics-header.jpg')
+img = load_image('data/audience-analytics-header.jpg')
 st.image(img)
 st.title("Exploratory Data Analysis for Purchasing Store")
 #options= st.selectbox('Please Select',['PowerBI'])
